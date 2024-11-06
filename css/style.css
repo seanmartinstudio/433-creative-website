@@ -37,6 +37,7 @@
     height: 100%; 
     max-width: 100%;  
     font-family: 'fraktion', sans-serif; 
+    overflow: hidden;
   }
   
   h1 {

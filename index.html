@@ -59,17 +59,34 @@
         </div>
     </main>
 
-    <script>'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js'</script>
-    <script>
-        //replaces yourElement's text with "This is the new text" 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    gsap.registerPlugin(TextPlugin)
-
-    gsap.to('.title', {
-    duration: 4,
-    text: "This is the new text",
-    ease: "none",
+    <style>
+        /* Hide h1 and staggered items initially */
+        .heading-container {
+          opacity: 0;
+        }
+      </style>
+      
+      <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Stagger other elements first
+    gsap.from(".info-container", {
+      opacity: 0,
+      y: 20, // Slight vertical movement
+      duration: 0.8,
+      ease: "power2.out",
+      stagger: 0.2, // Stagger delay between each item
     });
-    </script>
+
+    // Animate h1 right after the staggered items (shorter delay)
+    gsap.fromTo(".heading-container",
+      { x: -100, opacity: 0 }, // Start off to the left
+      { x: 0, opacity: 1, duration: 1, ease: "power2.out", delay: 0.1 } // Delay the h1 animation slightly
+    );
+  });
+      </script>
+
+
 </body>
 </html>
