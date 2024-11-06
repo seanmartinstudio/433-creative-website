@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>433 Creative</title>
+</head>
+<body>
+    <main class="content-container">
+        <div class="box-left">
+            <div class="info-container">
+                <section>
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Creative Direction</li>
+                        <li>Art Direction</li>
+                        <li>Web Design</li>
+                        <li>Web Development</li>
+                        <li>Brand Strategy</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Clients</h4>
+                    <ul>
+                        <li>World Surf League</li>
+                        <li>Google</li>
+                        <li>Walmart</li>
+                        <li>Levi's</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Partners & Friends</h4>
+                    <ul>
+                        <li>B2 Creative</li>
+                        <li>GCS Agency</li>
+                        <li>Adler / Smith Gallery</li>
+                    </ul>
+                </section>
+
+                
+            </div>
+        </div>
+
+        <div class="box-right">
+            <div class="empty"></div>
+                <div class="heading-container">
+                    <h1 class="title">Four Thirty Three is a full-service creative agency.</h1>
+                    <br>
+                    <br>
+                    <h2>Santa Monica, California</h2>
+                    <h3>
+                        <span class="arrow">&rarr;</span> info@433creative.com
+                    </h3>
+                </div>
+            
+        </div>
+    </main>
+
+    <script>'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js'</script>
+    <script>
+        //replaces yourElement's text with "This is the new text" 
+
+    gsap.registerPlugin(TextPlugin)
+
+    gsap.to('.title', {
+    duration: 4,
+    text: "This is the new text",
+    ease: "none",
+    });
+    </script>
+</body>
+</html>

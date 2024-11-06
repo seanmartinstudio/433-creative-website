@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'fraktion-bold';
+    src: url("/fonts/PPFraktionSans-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'fraktion-light';
+    src: url("/fonts/PPFraktionSans-Light.otf") format("opentype");
+  }
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+    0% {
+      transform: translateX(-7px); /* Start position */
+    }
+    50% {
+      transform: translateX(0px); /* Move up */
+    }
+    100% {
+      transform: translateX(-7px); /* End position */
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%; 
+    max-width: 100%;  
+    font-family: 'fraktion', sans-serif; 
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    line-height: 45px;
+    font-family: 'fraktion-bold';
+    color: white;
+    text-align: end;
+  }
+
+  h2, h3, p, a {
+    font-family: 'fraktion-light';
+    font-size: 1rem;
+    color: white;
+  }
+
+  h4 {
+    font-family: 'fraktion-bold';
+    color: black;
+  }
+
+  li {
+    font-family: 'fraktion-light';
+    list-style-type: none;
+  }
+
+  .arrow {
+    font-size: 16px; /* Match the text size */
+    margin-left: 5px; /* Adjust spacing as needed */
+    display: inline-block;
+    animation: bounce 4s ease-out infinite; /* Trigger bounce animation */
+  
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .box-right {
+    flex: 1;
+    background-color: #005A9C;
+    height: 100vh;
+    display: flex;
+  }
+
+  .box-left {
+    flex: 1;
+    background-color: #ffffff;
+    height: 100vh;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .empty {
+    flex: 1;
+  }
+
+  .heading-container {
+    flex: 1;
+    text-align: end;
+    padding: 35px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px;
+  }
+
+  @media (max-width: 767px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .box-right {
+        height: 100vh;
+        max-width: fit-content;
+        order: 1;
+    }
+
+    .box-left {
+        height: 100vh;
+        order: 2;
+    }
+
+    .empty {
+        flex: 1;
+      }
+    
+      .heading-container {
+        flex: 3;
+      }
+
+
+  }
+
+
