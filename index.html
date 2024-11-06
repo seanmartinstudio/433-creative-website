@@ -78,7 +78,7 @@
     gsap.from(".info-container", {
       opacity: 0,
       y: 50, // Slight vertical movement
-      duration: 1,
+      duration: 2,
       ease: "power2.out",
       stagger: 0.8, // Stagger delay between each item
     });
@@ -86,7 +86,7 @@
     // Animate h1 right after the staggered items (shorter delay)
     gsap.fromTo(".heading-container",
       { x: -100, opacity: 0 }, // Start off to the left
-      { x: 0, opacity: 1, duration: 1, ease: "power2.out", delay: 0.1 } // Delay the h1 animation slightly
+      { x: 0, opacity: 1, duration: 2, ease: "power2.out", delay: 0.1 } // Delay the h1 animation slightly
     );
   });
       </script>
