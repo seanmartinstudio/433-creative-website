@@ -119,11 +119,13 @@
 
     .content-container {
         flex-direction: column;
+        will-change: transform;
     }
 
     .info-container {
         flex-direction: column;
         gap: 15px;
+        will-change: transform;
     }
 
     .box-right {
