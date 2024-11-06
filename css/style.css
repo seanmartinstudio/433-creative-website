@@ -112,6 +112,11 @@
   }
 
   @media (max-width: 767px) {
+
+    body {
+      overflow: auto;
+    }
+    
     .content-container {
         flex-direction: column;
     }
