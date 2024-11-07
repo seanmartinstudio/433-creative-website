@@ -13,6 +13,11 @@
     src: url("/fonts/PPFraktionMono-Regular.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: 'NeueMontreal-book';
+    src: url("/fonts/PPNeueMontreal-Book.otf") format("opentype");
+  }
+
 
 /* Keyframes for bounce animation */
 @keyframes bounce {
@@ -43,7 +48,7 @@
   h1 {
     font-size: 2.25rem;
     line-height: 45px;
-    font-family: 'fraktion-bold';
+    font-family: 'NeueMontreal-book';
     font-weight: 400;
     color: white;
     text-align: end;
@@ -81,7 +86,7 @@
 
   .box-right {
     flex: 1;
-    background-color: #005A9C;
+    background-color: #09143C;
     height: 100vh;
     display: flex;
   }
