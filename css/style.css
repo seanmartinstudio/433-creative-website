@@ -18,6 +18,11 @@
     src: url("/fonts/PPNeueMontreal-Book.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: 'NeueMontreal-thin';
+    src: url("/fonts/PPNeueMontreal-Thin.otf") format("opentype");
+  }
+
 
 /* Keyframes for bounce animation */
 @keyframes bounce {
@@ -50,14 +55,14 @@
     line-height: 45px;
     font-family: 'NeueMontreal-book';
     font-weight: 400;
-    color: white;
+    color: #F5FFFA;
     text-align: end;
   }
 
   h2, h3, p, a {
     font-family: 'fraktion-light';
     font-size: 1rem;
-    color: white;
+    color: #F5FFFA;
   }
 
   h4 {
@@ -93,7 +98,7 @@
 
   .box-left {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #F5FFFA;
     height: 100vh;
     align-items: flex-end;
     align-content: flex-end;
